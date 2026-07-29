@@ -1,0 +1,47 @@
+import pandas as pd
+
+# Step 1: Create a Series
+print("===== Step 1: Series =====")
+marks = pd.Series([85, 90, 78, 88, 92])
+print(marks)
+
+# Step 2: Create a DataFrame
+print("\n===== Step 2: DataFrame =====")
+
+students = {
+    "Name": ["Amit", "Priya", "Rahul", "Sneha", "Karan"],
+    "Age": [20, 21, 19, 22, 20],
+    "Marks": [85, 90, 78, 88, 92]
+}
+
+df = pd.DataFrame(students)
+
+print(df)
+
+# Step 3: Display First 5 Rows
+print("\n===== Step 3: First 5 Rows =====")
+print(df.head())
+
+# Step 4: Display Last 5 Rows
+print("\n===== Step 4: Last 5 Rows =====")
+print(df.tail())
+
+# Step 5: Display First 3 Rows
+print("\n===== Step 5: First 3 Rows =====")
+print(df.head(3))
+
+# Step 6: Display Last 2 Rows
+print("\n===== Step 6: Last 2 Rows =====")
+print(df.tail(2))
+
+# Step 7: Display Shape
+print("\n===== Step 7: Shape =====")
+print(df.shape)
+
+# Step 8: Display Column Names
+print("\n===== Step 8: Column Names =====")
+print(df.columns)
+
+# Step 9: Display Information
+print("\n===== Step 9: DataFrame Information =====")
+df.info()
